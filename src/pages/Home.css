@@ -1,0 +1,87 @@
+/* General styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+body {
+  background: radial-gradient(circle, #2b2b2b, #383838); /* Dark gray center fading to medium gray */
+  color: #f4f4f9; /* Light text for contrast */
+}
+
+/* Home container */
+.home-container {
+  padding: 40px;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.home-container h1 {
+  font-size: 3rem;
+  color: #f1f1f1;
+  margin-bottom: 10px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.home-container p {
+  font-size: 1.5rem;
+  margin: 20px 0;
+  color: #666;
+  font-weight: 300;
+}
+
+/* Links container */
+.links-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Spacing between links */
+}
+
+/* Link card */
+.link-card {
+  background-color: #09bc8a;
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 12px;
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.link-card:hover {
+  background-color: #0a9d76;
+  transform: translateY(-5px); /* Slight lift effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .link-card {
+    width: 90%; /* Even wider cards on small screens */
+  }
+}
+
+/* Additional styling for text inside the link */
+.link-text {
+  display: block;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Add smooth transitions for all links */
+.link-card:focus {
+  outline: none;
+  background-color: #0a9d76;
+}

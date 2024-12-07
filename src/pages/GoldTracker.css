@@ -1,0 +1,89 @@
+.gold-tracker-container {
+    padding: 40px;
+    color: #f4f4f9; /* Light text color for better contrast */
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: #f4f4f9; /* Lighter color for the heading */
+    margin-bottom: 20px;
+  }
+  
+  .gold-section,
+  .players-section,
+  .split-section {
+    margin-bottom: 30px;
+  }
+
+  .gold-section p{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9); /* Subtle drop shadow */
+    margin-bottom: 20px;
+  }
+
+  .split-section p{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9); /* Subtle drop shadow */
+  }
+  
+  button {
+    background-color: #09bc8a;
+    color: #fff; /* White text on buttons */
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0a9d76;
+  }
+  
+  button:active {
+    transform: translateY(2px); /* Slight press effect */
+  }
+
+  #gold-button-reset{
+    background-color: #f83a3a;
+    color: #fff; /* White text on buttons */
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #gold-button-reset:hover{
+    background-color: rgb(202, 47, 47);
+  }
+  
+  input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #444;
+    color: #f4f4f9; /* Lighter text color in input */
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: #09bc8a;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    color: #f4f4f9; /* Lighter color for general text */
+  }
+  
+  strong {
+    color: #FFF000; /* Accent color for labels */
+  }
+  #players-label{
+    color: #09bc8a;
+    font-weight: bold;
+  }
+  

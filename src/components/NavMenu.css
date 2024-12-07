@@ -1,0 +1,90 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: Arial, sans-serif;
+}
+  
+.app-container {
+    display: flex;
+}
+  
+.sidebar {
+    width: 250px;
+    background-color: #222222;
+    color: white;
+    padding: 20px;
+    height: 100vh;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3); /* Add subtle drop shadow to the right */
+}
+  
+.logo-container {
+    margin-bottom: 40px;
+    box-shadow: 0 4px 0px rgba(0, 0, 0, 0.15); /* Adds a subtle shadow to the bottom */
+
+}
+  
+.logo-container h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo-container:active{
+    background-color: rgba(121, 121, 121, 0.37); /* Grey Hover */
+}
+  
+.nav-links {
+    display: flex;
+    flex-direction: column;
+}
+  
+.nav-item {
+    margin: 15px 0;
+}
+  
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+  
+.nav-link:hover,
+.nav-link:active {
+    font-weight: bold;
+    background-color: rgba(121, 121, 121, 0.37); /* Grey Hover */
+    color: white;
+}
+  
+.nav-link.active-link {
+    font-weight: bold;
+    background-color: rgba(160, 160, 160, 0.5); /* Grey Highlight */
+}
+
+#nav-gold .nav-link.active-link {
+    background-color: rgba(255, 240, 0, 0.5); /* Highlighted Gold Tracker */
+}
+
+#nav-xp .nav-link.active-link {
+    background-color: rgba(102, 51, 153, 0.5); /* Highlighted XP Tracker */
+}
+
+.nav-item a .logo {
+    margin-right: 10px;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+}
