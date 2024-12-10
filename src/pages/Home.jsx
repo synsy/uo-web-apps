@@ -15,6 +15,14 @@ const Home = () => {
           <span className="link-text">Outlands Vendor Malls</span>
         </a>
         <a
+          href="https://www.exploreoutlands.com/"
+          className="link-card"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span className="link-text">Explore Outlands</span>
+        </a>
+        <a
           href="https://wiki.uooutlands.com/Main_Page"
           className="link-card"
           target="_blank"
