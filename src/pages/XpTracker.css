@@ -62,10 +62,12 @@ select:focus {
   justify-content: space-around;
   gap: 20px;
   margin-top: 20px;
+  text-shadow: 3px 3px 3px rgb(0, 0, 0, 0.6);
 }
 
 .xp-gained-label strong{
   color:#8c3adf;
+  text-shadow: 3px 3px 3px rgb(0, 0, 0, 0.6);
 }
 
 .xp-column {
@@ -86,15 +88,20 @@ select:focus {
 }
 
 /* Dropdown Section */
-.dropdown-container,
-.number-dropdown {
+/* Ensure dropdowns are side-by-side */
+.dropdown-container {
+  display: flex;
+  gap: 20px; /* Adjust the gap between the dropdowns */
+  flex-wrap: wrap; /* Wrap them on smaller screens if necessary */
+}
+
+/* Optional: Adjust labels and select for consistent spacing */
+.dropdown-container label {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 10px;
-  width: 100%;
-  max-width: 300px;
+  justify-content: center;
 }
+
 
 select {
   margin-left: 0;
@@ -119,6 +126,31 @@ select {
   margin-bottom: 10px;
 }
 
+.progress-bar-container {
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  height: 20px;
+  margin-top: 10px;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #8c3adf;
+  border-radius: 10px 0 0 10px;
+  transition: width 0.3s ease;
+}
+
+.progress-percentage {
+  margin-top: 5px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+
+
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .xp-inputs {
@@ -129,4 +161,8 @@ select {
   .xp-results {
       flex-direction: column;
   }
+  .dropdown-container {
+    flex-direction: column;
+  }
 }
+
