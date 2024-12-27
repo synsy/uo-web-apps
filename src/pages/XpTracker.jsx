@@ -90,6 +90,10 @@ const XpTracker = () => {
             <select
               value={firstDropdown}
               onChange={(e) => setFirstDropdown(e.target.value)}
+              // style={{
+              //   backgroundColor: aspectColors[firstDropdown] || "white", // Default to white if no match
+              //   color: firstDropdown && firstDropdown !== "" ? "black" : "gray", // Adjust text color for readability
+              // }}
             >
               <option value="">Select an option</option>
               {dropdownOptions.map((option) => (
@@ -176,11 +180,15 @@ const XpTracker = () => {
             />
           </div>
 
+          {/* Progress Bar */}
           <div className="progress-bar-container">
-            <div className="progress-bar" style={{ width: `${aspectXpPercentage}%` }}>
-              {aspectXpPercentage}%
-            </div>
-          </div>
+  <div className="progress-bar" style={{ width: `${aspectXpPercentage}%` }}>
+    {aspectXpPercentage}%
+  </div>
+  <div className="remaining-xp">
+    {formatNumber(tierXpValue - endingAspectXp)}
+  </div>
+</div>
         </div>
 
         <div className="input-group">
